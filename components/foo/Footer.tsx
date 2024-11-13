@@ -2,7 +2,6 @@ import { GitHubLogoIcon } from '@radix-ui/react-icons'
 import Link from 'next/link'
 import React from 'react'
 import WrapperBody from '@/components/wrappers/WrapperBody'
-import { TextHoverEffect } from '@/components/ui/text-hover-effect'
 import { Site } from '@/config/site'
 
 const Footer = () => {

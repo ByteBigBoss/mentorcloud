@@ -15,7 +15,7 @@ const WeekCard = ({ ...week }: Week) => {
 
     const topic = searchParams.get("t");
     setCurrentTopic(topic);
-  },[]);
+  },[searchParams, week.homeworks.days]);
 
   return (
     <Link href={"/topic/week?t=" + currentTopic+"&w="+week.week} className='flex flex-col items-center'>
