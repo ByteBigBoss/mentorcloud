@@ -61,7 +61,7 @@ const Week = () => {
               </div>
               {/* MENTOR */}
               <div className='flex items-center gap-[4px] rounded-full px-4 py-1 border'>
-                <div className='text-[10px] font-medium opacity-60'>Mentor: </div>
+                <div className='text-[10px] font-medium opacity-60'>End Time: </div>
                 <div className='text-[10px] font-medium text-rose-400'>{week.main.end_time}</div>
               </div>
             </div>
