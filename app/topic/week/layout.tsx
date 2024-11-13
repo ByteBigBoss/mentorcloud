@@ -2,10 +2,10 @@ import { PageMetadata } from "@/config/site";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    ...PageMetadata.works
+    ...PageMetadata.week
 };
 
-export default function WorksLayout({
+export default function AboutLayout({
     children,
 }: Readonly<{
     children: React.ReactNode;

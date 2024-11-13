@@ -2,7 +2,7 @@ import { PageMetadata } from "@/config/site";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    ...PageMetadata.about
+    ...PageMetadata.topic
 };
 
 export default function AboutLayout({

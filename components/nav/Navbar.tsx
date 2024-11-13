@@ -89,8 +89,7 @@ const Navbar = () => {
                         </div>
 
                         <div
-                            className={`px-[4px] flex flex-col items-center  text-[14px] h-auto mt-6 gap-4 w-full`
-                            }>
+                            className={`px-[4px] flex flex-col items-center  text-[14px] h-auto mt-6 gap-4 w-full`}>
                             {/* HOME */}
                             <Link className='w-full' href={currentPath === "home" ? "" : "/"}>
                                 <Button variant='ghost'
@@ -99,27 +98,7 @@ const Navbar = () => {
                                             : " px-0 border-none focus:outline-none opacity-80"} w-full rounded-full h-[40px] border-[#0000001f] dark:border-[#ffffff1f] text-center`}
                                 >Home</Button>
                             </Link>
-                            {/* ABOUT */}
-                            <Link className='w-full' href={currentPath === "about" ? "" : "/about"}>
-                                <Button variant='ghost'
-                                    className={`${currentPath === "about" ? "border  font-medium opacity-100  flex items-center justify-center bg-[#f7f7f7] dark:bg-[#00000025] "
-                                        : currentPath === "works" ? " px-0 border-none focus:outline-none  opacity-80"
-                                            : "  px-0 border-none focus:outline-none opacity-80"} w-full rounded-full h-[40px] border-[#0000001f] dark:border-[#ffffff1f] text-center`}
-                                >About</Button>
-                            </Link>
-                            {/* WORKS */}
-                            <Link className='w-full' href={currentPath === "works" ? "" : "/works"}>
-                                <Button variant='ghost' className={`${currentPath === "works" ? "border   font-medium opacity-100  flex items-center justify-center bg-[#f7f7f7] dark:bg-[#00000025] "
-                                    : currentPath === "blog" ? " px-0 border-none focus:outline-none  opacity-80"
-                                        : "  px-0 border-none focus:outline-none opacity-80"} w-full rounded-full h-[40px] border-[#0000001f] dark:border-[#ffffff1f] text-center`}
-                                >Works</Button>
-                            </Link>
-                            {/* BLOG */}
-                            <Link className='w-full' href={currentPath === "blog" ? "" : "/blog"}>
-                                <Button variant='ghost' className={`${currentPath === "blog" ? "border   font-medium opacity-100  flex items-center justify-center bg-[#f7f7f7] dark:bg-[#00000025] "
-                                    : "  px-0 border-none focus:outline-none opacity-80"} w-full rounded-full h-[40px] border-[#0000001f] dark:border-[#ffffff1f] text-center`}
-                                >Blog</Button>
-                            </Link>
+                            
                         </div>
                     </Drawer.Body>
                 </Drawer.Content>
@@ -145,34 +124,13 @@ const Navbar = () => {
                                             : " px-0 border-none focus:outline-none opacity-80"} rounded-full h-[33px] border-[#0000001f] dark:border-[#ffffff1f] text-center`}
                                 >Home</Button>
                             </Link>
-                            {/* ABOUT */}
-                            <Link href={currentPath === "about" ? "" : "/about"}>
-                                <Button variant='ghost'
-                                    className={`${currentPath === "about" ? "border  font-medium opacity-100 px-[24px] flex items-center justify-center bg-[#f7f7f7] dark:bg-[#00000025] "
-                                        : currentPath === "works" ? " px-0 border-none focus:outline-none  opacity-80"
-                                            : "  px-0 border-none focus:outline-none opacity-80"} rounded-full h-[33px] border-[#0000001f] dark:border-[#ffffff1f] text-center`}
-                                >About</Button>
-                            </Link>
-                            {/* WORKS */}
-                            <Link href={currentPath === "works" ? "" : "/works"}>
-                                <Button variant='ghost' className={`${currentPath === "works" ? "border   font-medium opacity-100 px-[24px] flex items-center justify-center bg-[#f7f7f7] dark:bg-[#00000025] "
-                                    : currentPath === "blog" ? " px-0 border-none focus:outline-none  opacity-80"
-                                        : "  px-0 border-none focus:outline-none opacity-80"} rounded-full h-[33px] border-[#0000001f] dark:border-[#ffffff1f] text-center`}
-                                >Works</Button>
-                            </Link>
-                            {/* BLOG */}
-                            <Link href={currentPath === "blog" ? "" : "/blog"}>
-                                <Button variant='ghost' className={`${currentPath === "blog" ? "border   font-medium opacity-100 px-[24px] flex items-center justify-center bg-[#f7f7f7] dark:bg-[#00000025] "
-                                    : "  px-0 border-none focus:outline-none opacity-80"} rounded-full h-[33px] border-[#0000001f] dark:border-[#ffffff1f] text-center`}
-                                >Blog</Button>
-                            </Link>
+                           
                         </div>
                     </div>
 
                     {/* RIGHT */}
                     <div className='flex items-center gap-6 z-[50] mobile:hidden mid:hidden mid:w-0 mid:h-0 mobile:w-0 mobile:h-0'>
                         <ThemeSwitch />
-                        <Link href={"/contact"}> <Button className='text-[14px] font-semibold text-black bg-[#91FF00] h-[37px] px-[20px] rounded-[15px] flex justify-center items-center'>Let&apos;s Talk</Button></Link>
                     </div>
 
                     {/* MENUBAR */}

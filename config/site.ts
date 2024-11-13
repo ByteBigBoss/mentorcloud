@@ -1,7 +1,7 @@
 export const Site = {
-    siteName: "OmniUI",
+    siteName: "MentorFlow",
     gitHubUser: "@ByteBigBoss",
-    gitHubUrl: "https://github.com/ByteBigBoss/OmniUI",
+    gitHubUrl: "https://github.com/ByteBigBoss",
     author:"Nethmina",
     authorPortfolio:"#",
     org:"ImaginecoreX",
@@ -9,12 +9,12 @@ export const Site = {
 }
 
 export const SiteMetadata = {
-    title: "Next.js OmniUI Starter Kit",
+    title: "MentorFlow | Connect with Mentors",
     description: "your-site-description",
     author: "your-name",
     image: "@/app/favicon.ico",
     siteUrl: "https://your-site-url.com",
-    githubUsername: "your-github-username",
+    githubUsername: "ByteBigBoss",
     twitterUsername: "@your-twitter-username",
     ogSiteName: "your-og-site-name",
     ogTitle: "your-og-title",
@@ -25,9 +25,13 @@ export const SiteMetadata = {
 };
 
 export const PageMetadata = {
-    about: {
-        title: "About",
-        description: "About Your Website"
+    topic: {
+        title: "Topic Details | MentorFlow",
+        description: "Explore selected topic"
+    },
+    week:{
+ title: "Week Details | MentorFlow",
+        description: "Find details about the week"
     },
     works: {
         title: "Works",
