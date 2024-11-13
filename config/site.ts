@@ -1,5 +1,5 @@
 export const Site = {
-    siteName: "MentorFlow",
+    siteName: "MentorCloud",
     gitHubUser: "@ByteBigBoss",
     gitHubUrl: "https://github.com/ByteBigBoss",
     author:"Nethmina",
@@ -9,7 +9,7 @@ export const Site = {
 }
 
 export const SiteMetadata = {
-    title: "MentorFlow | Connect with Mentors",
+    title: "MentorCloud | Connect with Mentors",
     description: "your-site-description",
     author: "your-name",
     image: "@/app/favicon.ico",
@@ -26,23 +26,12 @@ export const SiteMetadata = {
 
 export const PageMetadata = {
     topic: {
-        title: "Topic Details | MentorFlow",
+        title: "Topic Details | MentorCloud",
         description: "Explore selected topic"
     },
     week:{
- title: "Week Details | MentorFlow",
+ title: "Week Details | MentorCloud",
         description: "Find details about the week"
     },
-    works: {
-        title: "Works",
-        description: "Your Works"
-    },
-    blog: {
-        title: "Blog",
-        description: "Your Blogs"
-    },
-    contact: {
-        title: "Contact",
-        description: "Your Contact Details"
-    },
+   
 };
