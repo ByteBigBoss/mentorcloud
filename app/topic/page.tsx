@@ -85,4 +85,10 @@ const TopicDetails = () => {
   )
 }
 
-export default <SuspenseWrapper><TopicDetails/></SuspenseWrapper>
+const wrapper = ()=>(
+  <SuspenseWrapper>
+    <TopicDetails />
+  </SuspenseWrapper>
+)
+
+export default wrapper

@@ -145,4 +145,10 @@ const Week = () => {
   )
 }
 
-export default <SuspenseWrapper><Week/></SuspenseWrapper>
+const wrapper = ()=>(
+  <SuspenseWrapper>
+    <Week />
+  </SuspenseWrapper>
+)
+
+export default wrapper
