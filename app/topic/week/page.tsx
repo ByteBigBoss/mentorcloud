@@ -9,6 +9,7 @@ import { BorderBeam } from '@/components/ui/border-beam';
 import TaskCard from '@/components/topic/TaskCard';
 import HomeWorks from '@/components/topic/HomeWorks';
 import { motion } from 'framer-motion';
+import SuspenseWrapper from '@/components/wrappers/SuspenseWrapper';
 
 const Week = () => {
 
@@ -144,4 +145,4 @@ const Week = () => {
   )
 }
 
-export default Week
+export default <SuspenseWrapper><Week/></SuspenseWrapper>

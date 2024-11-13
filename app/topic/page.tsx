@@ -1,5 +1,6 @@
 "use client"
 import WeekCard from '@/components/topic/WeekCard'
+import SuspenseWrapper from '@/components/wrappers/SuspenseWrapper'
 import WrapperBody from '@/components/wrappers/WrapperBody'
 import { Topics } from '@/data/topics'
 import { Loader } from '@mantine/core'
@@ -84,4 +85,4 @@ const TopicDetails = () => {
   )
 }
 
-export default TopicDetails
+export default <SuspenseWrapper><TopicDetails/></SuspenseWrapper>
