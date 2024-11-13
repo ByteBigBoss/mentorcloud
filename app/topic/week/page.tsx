@@ -4,12 +4,11 @@ import WrapperBody from '@/components/wrappers/WrapperBody';
 import { Topics } from '@/data/topics';
 import { Loader } from '@mantine/core';
 import { useRouter, useSearchParams } from 'next/navigation';
-import React, { useEffect, useState } from 'react'
+import React, { Suspense, useEffect, useState } from 'react'
 import { BorderBeam } from '@/components/ui/border-beam';
 import TaskCard from '@/components/topic/TaskCard';
 import HomeWorks from '@/components/topic/HomeWorks';
 import { motion } from 'framer-motion';
-import SuspenseWrapper from '@/components/wrappers/SuspenseWrapper';
 
 const Week = () => {
 
@@ -145,10 +144,10 @@ const Week = () => {
   )
 }
 
-const wrapper = ()=>(
-  <SuspenseWrapper>
+const SuspenseWrapper = () => (
+  <Suspense fallback={<Loader />}>
     <Week />
-  </SuspenseWrapper>
-)
+  </Suspense>
+);
 
-export default wrapper
+export default SuspenseWrapper

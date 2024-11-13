@@ -1,11 +1,10 @@
 "use client"
 import WeekCard from '@/components/topic/WeekCard'
-import SuspenseWrapper from '@/components/wrappers/SuspenseWrapper'
 import WrapperBody from '@/components/wrappers/WrapperBody'
 import { Topics } from '@/data/topics'
 import { Loader } from '@mantine/core'
 import { useRouter, useSearchParams } from 'next/navigation'
-import React, { useEffect, useState } from 'react'
+import React, { Suspense, useEffect, useState } from 'react'
 
 const TopicDetails = () => {
 
@@ -84,11 +83,10 @@ const TopicDetails = () => {
     </div>
   )
 }
-
-const wrapper = ()=>(
-  <SuspenseWrapper>
+const SuspenseWrapper = () => (
+  <Suspense fallback={<Loader />}>
     <TopicDetails />
-  </SuspenseWrapper>
-)
+  </Suspense>
+);
 
-export default wrapper
+export default SuspenseWrapper
